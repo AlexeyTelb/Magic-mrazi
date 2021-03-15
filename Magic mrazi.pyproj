@@ -49,6 +49,8 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\image\databank_ewok.jpeg" />
+    <Content Include="static\image\ewok-village.jpg" />
     <Content Include="static\image\ewoks.jpg" />
     <Content Include="static\image\Porgs1.png" />
     <Content Include="static\image\Porgs2.jpg" />
