@@ -21,7 +21,7 @@
     <div class="col-md-4">
         <h2>Wookiee</h2>
         <img src= "static\image\Wookiee.png">
-        <p>"It's not wise to upset a Wookiee."</p>
+        <p>It's not wise to upset a Wookiee.</p>
         <p><a class="btn btn-default" href=/Wookiee>Learn more &raquo;</a></p>
     </div>
 </div>
