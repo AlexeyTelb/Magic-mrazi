@@ -50,6 +50,9 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="static\image\ewoks.jpg" />
+    <Content Include="static\image\Porgs1.png" />
+    <Content Include="static\image\Porgs2.jpg" />
+    <Content Include="static\image\Porgs3.jpg" />
     <Content Include="static\image\Wookiee.png" />
     <Content Include="static\image\porgi.jpg" />
     <Content Include="static\scripts\bootstrap.js" />

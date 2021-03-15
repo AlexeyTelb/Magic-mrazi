@@ -19,8 +19,7 @@ def home():
 def contact():
     """Renders the contact page."""
     return dict(
-        title='Contact',
-        message='Your contact page.',
+        title='Ewoks'
 
     )
 
@@ -29,8 +28,7 @@ def contact():
 def about():
     """Renders the about page."""
     return dict(
-        title='About',
-        message='Порги-это красивый пингвин',
+        title='Porgs'
 
     )
 @route('/Wookiee')
@@ -38,7 +36,6 @@ def about():
 def about():
     """Renders the about page."""
     return dict(
-        title='About',
-        message='Your application description page.',
+        title='Wookiee'
 
     )
