@@ -1,9 +1,8 @@
 % rebase('layout.tpl', title='Home Page')
 
-<div class="jumbotron">
-    <h1>Star Wars</h1>
-    <p class="lead">Fantastic creatures from the Star Wars universe</p>
-</div>
+
+ <img src= "static\image\banner.png">
+
 
 <div class="row">
     <div class="col-md-4">
