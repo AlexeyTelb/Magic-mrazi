@@ -7,8 +7,8 @@ def my_form():
     if qwer=="" or  mail=="":
          return "Не все поля заполены "
     else:
-        match = re.search(r'^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$', mail)
-        if match!="":
+        match = re.search(r'([@]mail[.]ru)', mail)
+        if match!=None:
             return "Thanks! The answer will be sent to the mail %s" % mail
         else:
-            return "This mail is not %s"% mail
+            return "This mail doesn't exist %s"% mail
