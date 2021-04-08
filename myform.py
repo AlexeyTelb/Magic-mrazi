@@ -5,7 +5,7 @@ def my_form():
     mail = request.forms.get('ADRESS')
     qwer =  request.forms.get('QUEST')
     if qwer=="" or  mail=="":
-         return "Не все поля заполены "
+         return "Not all fields are filled "
     else:
         match = re.search(r'([@]mail[.]ru)', mail)
         if match!=None:
