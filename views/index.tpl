@@ -24,7 +24,7 @@
         <p><a class="btn btn-default" href=/Wookiee>Learn more &raquo;</a></p>
     </div>
     <h3> Ask a Question </h3>
-<form action="/home" method="post">
+<form action="/index" method="post">
         <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p> 
         <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
         <p><a class="btn btn-default"><input type="submit" value="Send"></p>
