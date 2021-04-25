@@ -1,7 +1,7 @@
 """
 Routes and views for the bottle application.
 """
-
+import myform
 from bottle import route, view
 @route('/')
 @route('/home')

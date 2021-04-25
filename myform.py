@@ -5,8 +5,11 @@ import json
 @post('/index', method='post')
 def my_form():
     questions={}
-    mail = request.forms.get('ADRESS')
-    qwer =  request.forms.get('QUEST')
+    #mail = request.forms.get('ADRESS')
+    #qwer =  request.forms.get('QUEST')
+    mail='ddfmail.ru'
+    qwer='regerg'
+    return mail
     if qwer=="" or  mail=="":
          return "Not all fields are filled "
     else:
