@@ -51,3 +51,11 @@ def contact():
     return dict(
         title='Reg'
         )
+
+@route('/Comments')
+@view('Comments')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='Comments'
+        )

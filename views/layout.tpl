@@ -23,7 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/Reg">Registratision</a></li>
                     <li><a href="/Entry">Entry</a></li>
-                    <li><a href="/contact">Comments</a></li>
+                    <li><a href="/Comments">Comments</a></li>
                 </ul>
             </div>
         </div>
