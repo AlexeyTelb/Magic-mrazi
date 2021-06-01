@@ -19,6 +19,13 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Reg">Registratision</a></li>
+                    <li><a href="/Entry">Entry</a></li>
+                    <li><a href="/contact">Comments</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

@@ -37,3 +37,17 @@ def about():
         title='Wookiee'
 
     )
+@route('/Entry')
+@view('Entry')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='Entry'
+        )
+@route('/Reg')
+@view('Reg')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='Reg'
+        )
