@@ -2,7 +2,8 @@
 
 
  <img src= "static\image\banner.png">
-
+ <form method="route" action="/index" class="form">
+ </form>
 
 <div class="row">
     <div class="col-md-4">

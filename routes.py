@@ -2,9 +2,10 @@
 Routes and views for the bottle application.
 """
 import myform
+import Reg
 from bottle import route, view
 @route('/')
-@route('/home')
+@route('/index')
 @view('index')
 def home():
     """Renders the home page."""
