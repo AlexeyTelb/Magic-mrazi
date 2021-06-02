@@ -1,5 +1,5 @@
 % rebase('layout.tpl', title='Home Page')
-<form method="post" action="" class="form">
+<form method="post" action="/Comments" class="form">
 
 <style>
 
@@ -80,6 +80,7 @@
 
 <body class =center>
     <div  class=block-left id=left>
+
      <p>
          <label for="lastname"><span class="formTextRed">*</span> Surname:</label>
          <input type="text" name="lastname" id="lastname" />
@@ -123,10 +124,7 @@
          <textarea rows="10" name="comment" id="comment"></textarea>
      </p>
 
-     <p>
-         <input type="checkbox" name="confirm" id="confirm" />
-         <label for="confirm" class="confirm"><span class="formTextRed">*</span> I have no objection to the publication of my review on the site for advertising purposes:</label>
-     </p>
+    
 
      <p class="submit">
          <input type="submit" value="Send" />
@@ -135,10 +133,13 @@
 
     <div class=block-right>
      <div class=con>
+         %with open("data1.txt",encoding="utf-8") as file:
+            %int_number = file.readline(15)
          <img src="static\image\avatar-female.png" alt="avatar">
          <p>Country: Russia</p>
          <p><span>Maria Belova</span></p>
-         <p>Great forum, interesting articles. many text  many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text </p>
+
+         <p>{{int_number}}</p>
      </div>
 
      <div class=con>

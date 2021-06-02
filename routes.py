@@ -2,6 +2,7 @@
 Routes and views for the bottle application.
 """
 import myform
+import Comments
 from bottle import route, view
 @route('/')
 @route('/home')
