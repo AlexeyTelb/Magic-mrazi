@@ -35,9 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="Comments.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="myform.py">
       <SubType>Code</SubType>
     </Compile>
