@@ -1,0 +1,12 @@
+---------------------------------------------------------------------
+Login: gg
+Password: 11
+Email: leha.telbizov@mail.ru
+---------------------------------------------------------------------
+Login: alex
+Password: 11
+Email: leha.telbizov@mail.ru
+---------------------------------------------------------------------
+Login: Oleg
+Password: 1233
+Email: gnida@mail.ru
