@@ -1,5 +1,7 @@
 % rebase('layout.tpl', title='Home Page')
 <form method="post" action="" class="form">
+%with open ("Comments.txt", encoding="utf-8") as file:
+    %text = file.read()
 
 <style>
 
@@ -28,15 +30,22 @@
         width: 400px;
     }
 
-    .form textarea {
+
+    .textarea1 {
         width: 400px;
+        max-width: 460px;
+        min-width: 460px;
+        line-height: 150%;
+        resize: none;
     }
 
-    .form textarea {
+    .textarea2 {
         width: 400px;
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 460px;
+        min-width: 460px;
         line-height: 150%;
+        resize: none;
+        text-align: center
     }
 
     .confirm {
@@ -89,10 +98,6 @@
          <label for="firstname"><span class="formTextRed">*</span> Name:</label>
          <input type="text" name="firstname" id="firstname" />
      </p>
-     <p>
-         <label for="middlename">Patronymic:</label>
-         <input type="text" name="middlename" id="middlename" />
-     </p>
 
      <p>
          <label for="email"><span class="formTextRed">*</span> Email:</label>
@@ -119,13 +124,13 @@
      </p>
 
      <p>
-         <label for="comment"><span class="formTextRed">*</span> Comment:</label>
-         <textarea rows="10" name="comment" id="comment"></textarea>
+        <label for="Date"><span class="Date">*</span> Select Date:</label>
+        <input name="Date" type="date" name="calendar">
      </p>
 
      <p>
-         <input type="checkbox" name="confirm" id="confirm" />
-         <label for="confirm" class="confirm"><span class="formTextRed">*</span> I have no objection to the publication of my review on the site for advertising purposes:</label>
+         <label for="comment"><span class="formTextRed">*</span> Comment:</label>
+         <textarea class=textarea1 rows="10" name="comment" id="comment"></textarea>
      </p>
 
      <p class="submit">
@@ -134,19 +139,9 @@
     </div>
 
     <div class=block-right>
-     <div class=con>
-         <img src="static\image\avatar-female.png" alt="avatar">
-         <p>Country: Russia</p>
-         <p><span>Maria Belova</span></p>
-         <p>Great forum, interesting articles. many text  many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text many text </p>
-     </div>
-
-     <div class=con>
-         <img src="static\image\avatar-male.png" alt="avatar">
-         <p>Country: Russia</p>
-         <p><span>Alexey Frolov</span></p> 
-         <p>Every day I go to read articles, I like it very much.</p>
-     </div>
+     <p>
+      <textarea class=textarea2 id="text" name="text" rows=30 readonly>{{text}} </textarea>
+     </p>
     </div>
 </body>
  </form>

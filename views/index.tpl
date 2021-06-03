@@ -2,7 +2,29 @@
 
 
  <img src= "static\image\banner.png">
+ <form>
 
+ <style>
+    .center
+    {
+            position: absolute;
+            top: 5%;
+            left: 25%;
+    }
+    .block-left
+    {
+        width:50%;
+        height:800px;
+        overflow:auto;
+        float:left;
+    }
+    .block-right
+    {
+        width:50%;
+        height:800px;
+        overflow:auto;
+    }
+</style>
 
 <div class="row">
     <div class="col-md-4">
@@ -22,10 +44,14 @@
         <img src= "static\image\Wookiee.png">
         <p>It's not wise to upset a Wookiee.</p>
         <p><a class="btn btn-default" href=/Wookiee>Learn more &raquo;</a></p>
-<h3> Ask a Question </h3>
-<form action="/index" method="post">
-        <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p> 
-        <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
-        <class="btn btn-default"><input type="submit" value="Send">
-</form>
+    </div>
 </div>
+<div  class=block-left id=left>
+    <p1>left text</p1>
+</div>
+
+<div class=block-right>
+    <p1>right text</p1>
+</div>
+</form>
+
