@@ -3,7 +3,7 @@ import re
 import pdb
 import json
 @post('/Comments', method='post')
-def Entry_form():
+def Entry_form(): #присвоение переменным значения с сайта 
     log=[]
     Surname = request.forms.get('lastname')
     Name = request.forms.get('firstname')
@@ -13,9 +13,9 @@ def Entry_form():
     Country = request.forms.get('country')
     Comment = request.forms.get('comment')
 
-    f=open ("Comments.txt","a")
+    f=open ("Comments.txt","a") #Открытие файла
 
-    f.writelines("------------------------------------------------------------------------------------------"+"\n")
+    f.writelines("------------------------------------------------------------------------------------------"+"\n") #Запись в файл
     f.writelines("Surname: "+Surname+"\n")
     f.writelines("Name: "+Name+"\n")
     f.writelines("Date: "+Date+"\n")
@@ -27,8 +27,8 @@ def Entry_form():
     
     f.close()
 
-    
-    return  ('''<h2 align=center>Review has been sent, to go back click on the button</h2>'''+"<br>"+'''
+    #-----------------------------------Вывод кнопки Возвращения назад------------------------------------
+    return  ('''<h2 align=center>Review has been sent, to go back click on the button</h2>'''+"<br>"+''' 
         <style>
 
             h2
@@ -52,3 +52,4 @@ def Entry_form():
             }
         </style>
             <p><a href="/Comments"><input class=h4  type="submit" value="Back"></a></p>''')
+   #-------------------------------------------------------------------------------------------------------

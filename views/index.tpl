@@ -4,7 +4,7 @@
  <img src= "static\image\banner.png">
  <form>
 
- <style>
+ <style> 
     .center
     {
             position: absolute;
@@ -45,13 +45,5 @@
         <p>It's not wise to upset a Wookiee.</p>
         <p><a class="btn btn-default" href=/Wookiee>Learn more &raquo;</a></p>
     </div>
-</div>
-<div  class=block-left id=left>
-    <p1>left text</p1>
-</div>
-
-<div class=block-right>
-    <p1>right text</p1>
-</div>
 </form>
 
