@@ -4,18 +4,17 @@ def Entry_form():
     logs=[]
     login = request.forms.get('log')
     pas = request.forms.get('pas')
-    g=open("data1.txt","r")
+    g=open("data2.txt","r")
     lines=0
     for line in g:
         lines+=1
-        if "Login:" in line:
-            string1, separator, string2 = line.partition(': ')
-            if (login+"\n" == string2):
-                break
-    string3, separator1, string4 = g.readline(lines+1).partition(': ')
-    print (g.readlines())
-    if pas+"\n"==string2:
+        if login == line:
+            log1=line
+            break
+    t=open("data3.txt","r")
+    a=t.readlines(lines)[0]
+    if pas+"\n"==a:
         f=open("D:/Users/lehat/Desktop/ррррр/Magic-mrazi-master1/views/layout.tpl","r")
-        print (f.read(1))
-        print ("SOSI")
+        b=f.readline(10000)[24]
+        print(b)
                 

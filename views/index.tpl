@@ -23,25 +23,20 @@
         <img src= "static\image\Wookiee.png">
         <p>It's not wise to upset a Wookiee.</p>
         <p><a class="btn btn-default" href=/Wookiee>Learn more &raquo;</a></p>
-<h3> Ask a Question </h3>
-<form action="/index" method="post">
-        <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p> 
-        <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
-        <class="btn btn-default"><input type="submit" value="Send">
-</form>
 </div>
 <style>
     .lognText{
         padding: 9px;
-        border: 1px solid #ffffff;
+        border: 1px solid #808080;
         border-radius: 5px;
         position: absolute;
         font-size: 20px;
-        width: 400px;
-        height: 600px;
-        top: 35%;
-        left: 85%;
-    }      
+        width: 150px;
+        height: 500px;
+        top: 20%;
+        left: 90%;
+        text-align: center;
+    }
 
 </style>
 
@@ -49,13 +44,14 @@
     .lognLab{
         position: absolute;
         font-size: 20px;
-        width: 200px;
-        top: 32%;
-        left: 85%;
-    }      
+        width: 150px;
+        top: 15%;
+        left: 90%;
+        text-align: center;
+    }
 
 </style>
 
 %with open("data2.txt",encoding="utf-8") as file:
     %logs=file.read()
-<p><label class=lognLab ;>Users:</label><textarea class=lognText>{{logs}}</textarea></p>
+<p><label class=lognLab ;>Users</label><textarea class=lognText>{{logs}}</textarea></p>

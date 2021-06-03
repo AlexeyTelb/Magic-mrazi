@@ -20,7 +20,7 @@ body {
 
 .form label {
     width: 180px;
-    float: left;
+    float: left;                
     color: #999;
 }
 
@@ -54,14 +54,28 @@ body {
 }
 
 </style>
+<style>
+    .lognLab{
+        position: absolute;
+        font-size: 20px;
+        width: 150px;
+        top: -20%;
+        left: 0%;
+        text-align: center;
+    }
+
+</style>
 <body>
     <div  class=center id=left>
+     <p>
+     <label for="Reg"><span class=lognLab>Registratision</label>            <!--Labels-->
+     </p>
      <p>
      <label for="Login"><span class="formTextRed">*</span> Login:</label>
      <input type="text" name="Login" id="lastname" />
      </p>
      <p>
-     <label for="Password"><span class="formTextRed">*</span> Password:</label>
+     <label for="Password"><span class="formTextRed">*</span> Password:</label> <!--textarea-->
      <input type="text" name="Password" id="firstname" />
      </p>
      <p>
@@ -73,7 +87,7 @@ body {
      <input type="text" name="email" id="email" />
      </p>
      <p class="submit">
-     <input type="submit" value="Send"/>
+     <input type="submit" value="Send"/>                                    <!--Button-->
      </p>
     </div>
 </body>

@@ -16,7 +16,7 @@ def Reg_form():
             string1, separator, string2 = line.partition(': ')
             logins.append(string2)
     print (logins)
-    if (login+"\n") in logins:
+    if (login+"\n") in logins:#Проверка на существующий логин
         return  ('''<h2 align=center>This login already exists. Try again.  </h2>'''+"<br>"+'''
         <style>
             h2
@@ -41,67 +41,72 @@ def Reg_form():
         </style>
             <p><a href="/Reg"><input class=h4  type="submit" value="Back"></a></p>''')
     else:
-        if (pas==pas1):
-            g=open("data2.txt","a")
-            g.writelines(login)
-            g.writelines("\n")
-            g.close()
-            f=open("data1.txt","a")
-            f.writelines("---------------------------------------------------------------------"+"\n")
-            f.writelines("Login: "+login)
-            f.writelines("\n")
-            f.writelines("Password: "+pas)
-            f.writelines("\n")
-            f.writelines("Email: "+mail)
-            f.writelines("\n")
-            f.close()
-            print("жопа крота")
-            return  ('''<h2 align=center>You have successfully registered </h2>'''+"<br>"+'''
-            <style>
+        if (pas==pas1):#Проверка на пароли
+            match = re.search (r'[a-zA-Z0-9+-]+[@][a-zA-Z0-9-.]+[^.].[a-zA-Z0-9-.]{2,3}$', mail)
+            if match!=None: #Проверка на почту
+                g=open("data2.txt","a")
+                g.writelines(login)
+                g.writelines("\n")
+                g.close()
+                t=open("data3.txt","a")
+                t.writelines(pas)
+                t.writelines("\n")
+                t.close()
+                f=open("data1.txt","a")
+                f.writelines("---------------------------------------------------------------------"+"\n")#Запись данных в файлы
+                f.writelines("Login: "+login)
+                f.writelines("\n")
+                f.writelines("Password: "+pas)
+                f.writelines("\n")
+                f.writelines("Email: "+mail)
+                f.writelines("\n")
+                f.close()
+                return  ('''<h2 align=center>You have successfully registered </h2>'''+"<br>"+'''
+                <style>
 
-                h2
-                {
-                font-size: 200%;
-                font-family: Verdana, Arial, Helvetica, sans-serif;
-                color: #808080;
-                }
-                .h4 {
-                border-radius: 12px;
-                background: wight;
-                border-color: #cccccc;
-                color: black;
-                font-size: 9pt;
-                height: 70px;
-                width: 200px;
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,0);
-                }
-            </style>
-                <p><a href="/index"><input class=h4  type="submit" value="Back"></a></p>''')#("you have successfully registered "+"<br>"+"<a href=/index>Back</a>")
-        elif (pas!=pas1):
-            return  ('''<h2 align=center>Password mismatch. Try again.  </h2>'''+"<br>"+'''
-            <style>
+                    h2
+                    {
+                    font-size: 200%;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    color: #808080;
+                    }
+                    .h4 {
+                    border-radius: 12px;
+                    background: wight;
+                    border-color: #cccccc;
+                    color: black;
+                    font-size: 9pt;
+                    height: 70px;
+                    width: 200px;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    }
+                </style>
+                    <p><a href="/index"><input class=h4  type="submit" value="Back"></a></p>''')
+            elif (pas!=pas1):
+                return  ('''<h2 align=center>Password mismatch. Try again.  </h2>'''+"<br>"+'''
+                <style>
 
-                h2
-                {
-                font-size: 200%;
-                font-family: Verdana, Arial, Helvetica, sans-serif;
-                color: #808080;
-                }
-                .h4 {
-                border-radius: 12px;
-                background: wight;
-                border-color: #cccccc;
-                color: black;
-                font-size: 9pt;
-                height: 70px;
-                width: 200px;
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,0);
-                }
-            </style>
-                <p><a href="/Reg"><input class=h4  type="submit" value="Back"></a></p>''')#("you have successfully registered "+"<br>"+"<a href=/index>Back</a>")
+                    h2
+                    {
+                    font-size: 200%;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    color: #808080;
+                    }
+                    .h4 {
+                    border-radius: 12px;
+                    background: wight;
+                    border-color: #cccccc;
+                    color: black;
+                    font-size: 9pt;
+                    height: 70px;
+                    width: 200px;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    }
+                </style>
+                    <p><a href="/Reg"><input class=h4  type="submit" value="Back"></a></p>''')

@@ -22,8 +22,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/Reg">Registratision</a></li>
-                    <!--<li><a href="/Entry">privet</a></li>-->
-                    <li><a href="/Comments">Comments</a></li>
+                    <li><a href="/index">Main</a></li>
+                    <!--<li><a href="/Comments">Comments</a></li>-->
                 </ul>
             </div>
         </div>
